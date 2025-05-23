@@ -1,0 +1,51 @@
+/* src/pages/NotFoundPage.css */
+.not-found-page {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    min-height: 70vh; /* Take up significant viewport height */
+    padding: 2rem 0;
+  }
+  
+  .not-found-page .container.text-center { /* Ensure container itself allows centering */
+      width: 100%;
+  }
+  
+  .not-found-content {
+      max-width: 600px;
+      margin: 0 auto; /* Center content block if container is full width */
+  }
+  
+  .not-found-page .error-code {
+    font-size: 7rem; /* Larger error code */
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    line-height: 1;
+  }
+  
+  .not-found-page .error-message {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .not-found-page .error-description {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .not-found-page .error-code {
+      font-size: 5rem;
+    }
+    .not-found-page .error-message {
+      font-size: 1.8rem;
+    }
+    .not-found-page .error-description {
+      font-size: 1rem;
+    }
+  }

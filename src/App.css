@@ -1,42 +1,85 @@
-#root {
-  max-width: 1280px;
+/* src/App.css */
+
+/* Ensure main content takes up available space, pushing footer down */
+.main-content {
+  flex-grow: 1; /* If Layout.jsx uses display: flex; flex-direction: column; for its direct children */
+  min-height: calc(100vh - 73px - 250px); /* Adjust based on your actual header and footer heights */
+  /* Example: 73px for header, 250px for footer. Inspect your elements to get accurate heights. */
+  padding-top: 1rem; /* Optional: space below sticky header */
+}
+
+
+/* Common page container styling */
+.page-container {
+  padding-bottom: 3rem; /* Ensure space above footer */
+}
+
+/* Common section padding */
+.section-padding {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.alternate-bg {
+  background-color: #f8f9fa; /* A very light grey for alternating sections */
+}
+
+/* Common page header styling */
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem; /* Space before the border */
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-header h1 {
+  font-size: 2.5rem; /* Responsive font size */
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.page-header p.subtitle { /* Added a class for better targeting */
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  max-width: 750px;
   margin: 0 auto;
-  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* General heading styles for sections within pages */
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--text-color); /* Or var(--primary-color) if preferred */
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+
+/* Utility class for centering text */
+.text-center {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Button enhancements */
+.btn-large {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive adjustments for general elements */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+  .page-header p.subtitle {
+    font-size: 1rem;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .section-title {
+    font-size: 1.8rem;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .section-padding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }

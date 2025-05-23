@@ -1,0 +1,96 @@
+/* src/pages/ContactPage.css */
+
+.contact-page .contact-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  @media (min-width: 992px) { /* Two columns on larger screens */
+    .contact-page .contact-content-wrapper {
+      grid-template-columns: 2fr 1fr; /* Form takes more space */
+    }
+  }
+  
+  .contact-page .contact-form-container,
+  .contact-page .contact-info-container {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .contact-page .contact-form-container .section-title,
+  .contact-page .contact-info-container .section-title {
+    text-align: left; /* Align section titles left within their containers */
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .contact-page .contact-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-page .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .contact-page .contact-form input[type="text"],
+  .contact-page .contact-form input[type="email"],
+  .contact-page .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensure padding doesn't add to width */
+  }
+  
+  .contact-page .contact-form input:focus,
+  .contact-page .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+  
+  .contact-page .contact-form textarea {
+    resize: vertical; /* Allow vertical resize only */
+  }
+  
+  .contact-page .contact-form button[type="submit"] {
+    width: auto; /* Or 100% if preferred */
+  }
+  
+  .contact-page .contact-info-container .info-item {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-page .contact-info-container .info-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .contact-page .contact-info-container h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+  }
+  
+  .contact-page .contact-info-container p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-page .contact-info-container a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .contact-page .contact-info-container a:hover {
+    text-decoration: underline;
+  }

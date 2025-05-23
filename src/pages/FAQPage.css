@@ -1,0 +1,86 @@
+/* src/pages/FAQPage.css */
+
+.faq-page .faq-category {
+    margin-bottom: 3rem;
+  }
+  
+  .faq-page .faq-category-title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block; /* So border only spans text width */
+  }
+  
+  .faq-page .faq-item {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  }
+  
+  .faq-page .faq-question {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease; /* Added transition for hover */
+  }
+  
+  .faq-page .faq-question:hover {
+    background-color: #f8f9fa; /* Slight hover effect */
+  }
+  
+  .faq-page .faq-icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    transition: transform 0.2s ease; /* Smooth transition for icon rotation */
+  }
+  
+  .faq-page .faq-item.open .faq-icon {
+    transform: rotate(45deg); /* Example: change icon for open state, if '+' is used, this makes it 'x' like */
+  }
+  
+  
+  .faq-page .faq-answer {
+    padding: 0 1.5rem 1rem 1.5rem; /* Padding for answer text */
+    border-top: 1px solid var(--border-color); /* Separator line */
+    /* max-height: 0; /* For CSS transition - if you want to animate open/close */
+    /* overflow: hidden; */
+    /* transition: max-height 0.3s ease-out; */
+  }
+  
+  /* If you want a CSS transition for opening/closing the answer:
+  .faq-page .faq-item.open .faq-answer {
+    max-height: 500px; /* Adjust to a sufficiently large value
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  */
+  
+  .faq-page .faq-answer p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    line-height: 1.7;
+    margin: 0; /* Remove default p margin if needed */
+    padding-top: 1rem; /* Space above answer text, only if not using max-height transition for padding */
+  }
+  
+  /*
+    The empty ruleset that was causing the error has been removed:
+    .faq-page .faq-item.open .faq-question {
+      // Optional: style for when question is open
+      // color: var(--primary-color);
+    }
+  */

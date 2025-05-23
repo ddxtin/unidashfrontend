@@ -1,0 +1,73 @@
+/* src/pages/UniversitiesPage.css */
+
+.universities-page .benefits-for-universities .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .universities-page .benefit-card {
+    background-color: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: left; /* Align text left for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .universities-page .benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  }
+  
+  
+  .universities-page .benefit-icon {
+    font-size: 2.2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    display: block; /* Make icon take full width for alignment */
+  }
+  
+  .universities-page .benefit-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+  }
+  
+  .universities-page .benefit-card p {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+    line-height: 1.6;
+  }
+  
+  .universities-page .how-it-works-uni {
+    border-radius: 8px;
+    padding: 3rem 2rem; /* More padding for this section */
+  }
+  
+  .universities-page .how-it-works-uni .steps-list {
+    list-style-type: decimal; /* Use numbers for ordered list */
+    padding-left: 2rem; /* Indent list items */
+    max-width: 700px;
+    margin: 0 auto; /* Center the list block */
+  }
+  
+  .universities-page .how-it-works-uni .steps-list li {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+  
+  .universities-page .how-it-works-uni .steps-list li strong {
+    color: var(--primary-color);
+  }
+  
+  .universities-page .cta-uni-section p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }

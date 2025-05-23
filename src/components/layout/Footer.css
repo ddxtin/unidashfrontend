@@ -1,0 +1,64 @@
+/* src/components/layout/Footer.css */
+.app-footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: #adb5bd; /* Lighter text for contrast */
+    padding: 3rem 0 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-section h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .footer-section p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul li a,
+  .footer-section a {
+    color: #adb5bd;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover,
+  .footer-section a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-logo-mark {
+    height: 30px; /* Adjust as needed */
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #495057; /* Slightly lighter border */
+    font-size: 0.85rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }

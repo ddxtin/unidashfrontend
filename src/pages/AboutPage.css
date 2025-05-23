@@ -1,0 +1,81 @@
+/* src/pages/AboutPage.css */
+
+.about-page .mission-vision-section .mission-item,
+.about-page .mission-vision-section .vision-item {
+  margin-bottom: 2rem; /* Spacing between mission and vision if not using alternate-bg for padding */
+  padding: 1.5rem; /* Add some padding if not using section-padding on vision-item */
+}
+
+.about-page .mission-vision-section .mission-item p,
+.about-page .mission-vision-section .vision-item p,
+.about-page .story-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--secondary-color);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* Center align paragraph text in these sections */
+}
+
+.about-page .story-section p + p { /* Add space between paragraphs in story */
+    margin-top: 1rem;
+}
+
+.about-page .team-section .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-page .team-member {
+  text-align: center;
+}
+
+.about-page .team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--border-color);
+}
+
+.about-page .team-member h3 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.about-page .team-member p {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.about-page .values-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-page .values-list li {
+    font-size: 1.05rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.about-page .values-list li::before {
+    content: '✓'; /* Or any other icon/bullet */
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.about-page .values-list li strong {
+    color: var(--text-color);
+}

@@ -1,0 +1,67 @@
+/* src/components/sections/homepage/HeroSection.css */
+.hero-section {
+  background-color: var(--background-color); /* Or a gradient, or image */
+  padding: 4rem 0;
+  text-align: left;
+  /* background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%); */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex-basis: 55%;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.hero-cta .btn-large {
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  margin-right: 1rem;
+}
+
+.hero-image-container {
+  flex-basis: 40%;
+  text-align: center; /* Or adjust as needed */
+}
+
+.hero-image {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .hero-image-container {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,59 @@
+/* src/pages/StudentsPage.css */
+
+.students-page .feature-highlight .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem; /* Increased gap */
+    margin-bottom: 3rem;
+  }
+  
+  .students-page .feature-item {
+    background-color: #fff;
+    padding: 2rem 1.5rem; /* Increased padding */
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .students-page .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  }
+  
+  .students-page .feature-icon {
+    font-size: 2.5rem; /* Placeholder for actual icons */
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  
+  .students-page .feature-item h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+  }
+  
+  .students-page .feature-item p {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+    line-height: 1.6;
+  }
+  
+  .students-page .cta-section {
+    padding: 3rem 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .students-page .cta-section h2 {
+    color: var(--primary-color); /* Make title stand out on alternate bg */
+  }
+  
+  .students-page .cta-section p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
